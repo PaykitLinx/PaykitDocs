@@ -1,28 +1,34 @@
-# PaykitDoc 
+# PaykitDocs 
 
 Repositorio para armazenamento dos arquivos de integração com o Paykit Linx.
 
 ## Documentação Paykit
-- Para ser redirecionado a nossa documentação clique em [**DOCUMENTAÇÃO PAYKIT**](https://payhublinx.github.io/dposdrv_8h.html)
+- Para ser redirecionado a nossa documentação online clique em [**DOCUMENTAÇÃO PAYKIT**](https://paykitlinx.github.io/)
 
-## Instaladores Paykit
+## Instaladores e Release Notes Paykit
 
-Você pode encontrar os instaladores e release notes para do Paykit no link a seguir: [Instaladores](https://github.com/PayHubLinx/PaykitDoc/tree/main/Instaladores)
+Você pode encontrar os instaladores e release notes para do Paykit nos links a seguir: 
 
+1. [Paykit](https://github.com/PaykitLinx/PaykitDocs/tree/main/Instaladores/Paykit)
+1. [DPOS8](https://github.com/PaykitLinx/PaykitDocs/tree/main/Instaladores/DPOS8)
+
+### Pré-requisitos
+
+Para executar os instaladores é necessário ter instalado os pré-requisitos abaixo.
+
+1. [Runtime DPOS8](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EgeND2RizkJElupan2IeMIIBeNKi5yi49LzyeZAVYUqGvA?e=TblrBH)
+1. [Runtime Paykit](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EpggJ4YzdxxKmPbMRyyImFEBvr92MxrYELCG_VMz5aE3BA?e=HeGkYu)
 
 ## Exemplos de integração com o Paykit
-=================  
 
 A seguir os links para os exemplos
-- [C++](https://github.com/PayHubLinx/PaykitDoc/tree/main/ExemplosDeUso/C%2B%2B)
-- [C#](https://github.com/PayHubLinx/PaykitDoc/tree/main/ExemplosDeUso/CSharp)
-- [Delphi](https://github.com/PayHubLinx/PaykitDoc/tree/main/ExemplosDeUso/Delphi)
-- [Delphi 2012](https://github.com/PayHubLinx/PaykitDoc/tree/main/ExemplosDeUso/Delphi2012)
-- [Java](https://github.com/PayHubLinx/PaykitDoc/tree/main/ExemplosDeUso/Java)
-- [Visual Basic](https://github.com/PayHubLinx/PaykitDoc/tree/main/ExemplosDeUso/VisualBasic)
+- [C++](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/C%2B%2B)
+- [C#](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/CSharp)
+- [Delphi](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/Delphi)
+- [Delphi 2012](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/Delphi2012)
+- [Java](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/Java)
+- [Visual Basic](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/VisualBasic)
 
-## Sugestões e Dúvidas sobre integração:
-- Caso queira propor uma melhoria ou tirar dúvidas sobre integração com nosso produto, abra uma issue para nós: **[Canal de comunicação](https://github.com/PayHubLinx/PaykitDoc/issues)**
 
 ## Suporte à homologação
 

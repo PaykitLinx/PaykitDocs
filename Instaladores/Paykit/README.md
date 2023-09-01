@@ -1,6 +1,18 @@
 # RELEASE NOTES:
 
 
+## Versão: 8.22.20.1119
+
+	Descrição: Correção fluxo transação offline Cielo
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 24/08/2023
+    
+### Notes:
+1. **Hotfix**           - Correção crash fluxo transação offline
+
+
+### Links:
+1. [Binários 8.22.20.1119](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/Emp5ijzAxJdOmqQCrc5NTp4BZWbuwWBlzfPt5JcqSF18xw?e=YwKYyL)
     
 ## Versão: 8.22.20.1118
 

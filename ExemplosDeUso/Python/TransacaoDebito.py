@@ -15,7 +15,7 @@ pNumeroCupom = c_buffer(7)
 pNumeroControle = c_buffer(7)
 
 try:
-    print("TransacaoCartaoDebitoCompleta")
+    print("TransacaoCartaoDebito")
     print(dll.TransacaoCartaoDebito(pValorTransacao, pNumeroCupom, pNumeroControle))
     print('executou a função')
 except:

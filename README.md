@@ -28,6 +28,7 @@ A seguir os links para os exemplos
 - [Delphi 2012](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/Delphi2012)
 - [Java](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/Java)
 - [Visual Basic](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/VisualBasic)
+- [Python](https://github.com/PaykitLinx/PaykitDocs/tree/main/ExemplosDeUso/Python)
 
 
 ## Suporte à homologação

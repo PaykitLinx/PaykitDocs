@@ -1,6 +1,46 @@
 # RELEASE NOTES:
 
 
+## Versão: 8.22.21.0001
+
+	Descrição: Desenvolvimento do Client Compartilhado(ClientTS)
+	Plataforma: Windows x32
+	Data: 05/09/2023
+
+### Notes:
+1. Bugfix               - Correção alocação de memoria em transações com tarja
+1. Bugfix               - Correção da criação de pastas na instalação do client compartilhado
+
+
+### Links:
+1. [Binários 8.22.21.0001](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EmhENzu9xeFDtJegGF4CEFYBtqQmwqYF7Mm3rhbLjxYtMA?e=KLW2MQ)
+
+## Versão: 8.22.21.00
+
+	Descrição: Desenvolvimento do Client Compartilhado(ClientTS)
+	Plataforma: Windows x32
+	Data: 02/08/2023
+
+### Notes:
+1. Feature              - Adicionando método ConsultaCadastroLoja para automação obter os dados de Empresa e Loja retornados pelo TEF a partir do CNPJ.
+1. Feature              - Adicionando método ObtemDadosConfigurados para automação obter os dados de Empresa, Loja, CNPJ, IP e Porta do servidor TEF.
+1. Feature              - Adição de campo novo para sinalizar o TEF o tipo de instalação do client
+1. Bugfix               - Alterando método para parsear inteiro para hexa.
+1. Feature              - Permitir apenas uma conexão nas telas do Client
+1. Feature              - Carregando dlls da pasta do usuário ao invés da instalação
+1. Feature              - DPOSConfig utilizando a DPOSDRV para configuração do ambiente inicial de um novo PDV Compartilhado e validações de dados
+1. Feature              - Atualizando o coletor de logs, para capturar logs em qualquer tipo de instalação do client
+1. Feature              - Trava para que apenas 1 atualizador de versão execute na máquina TS
+1. Feature              - Remoção dos arquivos de configuração na desinstalação do client
+1. Feature              - Criação de link para iniciar o atualizador de versão no startup
+1. Feature              - Atualizando método atualização remota para utilizar o arquivo de configuração correto
+1. Feature              - Adicionando método para automação obter diretório de cupons de forma programática.
+1. Feature              - Movendo dados da ultima transação para o ini de registro da execução do client
+1. Feature              - Criação do arquivo de configuração e diretórios do ambiente compartilhado.
+1. Feature              - Adequação do instalador para utilização em ambiente compartilhado
+1. Feature              - Ajustar o client para trabalhar com diferentes arquivos de configuração
+1. Feature              - Tratamento de erro para pinpads sem chave de criptografia de dados da rede.
+
 ## Versão: 8.22.20.1119
 
 	Descrição: Correção fluxo transação offline Cielo

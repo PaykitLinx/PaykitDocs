@@ -1,5 +1,17 @@
 # RELEASE NOTES:
 
+## Versão: 8.22.15.0133
+
+	Descrição: Atualização mensagem de erro display PDV
+	Plataforma: Windows x32
+	Data: 27/10/2023
+    
+### Notes:
+1. **Feature**           - Alterando modulos do client para exibir mensagem de negativa da rede adquirente.
+
+### Links:
+1. [Binários 8.22.15.0133](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EqtPO0Otq09IryQDgNwTQ6MBZCFbgxi-q273j8wDHa83_w?e=IApVaH)
+
 ## Versão: 8.22.15.0132
 
 	Descrição: Correção de certificação

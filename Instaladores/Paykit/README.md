@@ -1,6 +1,27 @@
 # RELEASE NOTES:
 
 
+## Versão: 8.22.21.0003
+	
+	Descrição: Correção no instalador do Paykit, processo para aguardar serviço de telas ficar pronto e correção na comunicação com pinpad ABECS no Windows.
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 11/12/2023
+
+### Notes:
+1. Hotfix              - Ajuste para que o paykit aguarde o serviço de telas terminar de se processar para somente após isso tentar se comunicar.
+1. Hotfix              - Correção para que o atalho criado para o VerifNovaVersao no Windows Startup esteja correto em sistemas com linguagem apenas em Portugues
+1. Hotfix              - Correção para ajustar a comunicação de pinpads ABECS em máquinas TS.
+
+### Links:
+1. [Binários 8.22.21.0003](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EigkYfWU_ehOoB929Q5hGDwBXYLyNjyck5se10r6upLifA?e=q0gkxu)
+
+## Versão: 8.22.21.0002
+	Descrição: Correção para exibir mensagens corretas de acordo com o retorno da adquirente
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 16/11/2023
+
+1. Bugfix              - Ajustando retorno da FinishChip em pinpads ABECS para identificar corretamente o motivo em caso de transação negada.
+
 ## Versão: 8.22.21.0001
 
 	Descrição: Desenvolvimento do Client Compartilhado(ClientTS)

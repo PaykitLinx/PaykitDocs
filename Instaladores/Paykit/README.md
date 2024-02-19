@@ -1,26 +1,137 @@
 # RELEASE NOTES:
 
+## Versão: 8.22.22.0004
+	
+	Descrição: Correções realizadas durante a certificação de versão
+	Plataforma: Windows x32
+	Data: 15/02/2024
+
+1. **Bugfix**             - Alteração de passo que faz o envia da consulta status QR para imprimir comprovante.
+
+### Links:
+1. [Binários 8.22.22.0004](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/Esgzr9e9EGpJqax2HRWY1aoBNMRkLQXqoQfD35ClXxsfGA?e=dRCl5h)
+
+## Versão: 8.22.22.0003
+	Descrição: Correções realizadas durante a certificação de versão
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 08/02/2024
+
+1. **Bugfix**             - Alteração da mensagem no pinpad para indicar timeout na transação QR.
+
+## Versão: 8.22.22.0002
+	
+	Descrição: Correções realizadas durante a certificação de versão
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 08/02/2024
+
+1. **Bugfix**             - Correção para que o client pegue os campos do TEF de forma correta.
+
+## Versão: 8.22.22.0001
+	
+	Descrição: Correções realizadas durante a certificação de versão
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 07/02/2024
+
+1. **Bugfix**             - Correção no fluxo de resolução de pendencias, para que se selecionada a opção MANTER o client acate e retire da lista principal a pendencia.
+1. **Bugfix**             - Corrigindo transação de reimpressão completa para que acate os parametros passados e não questione ao usuário quando não deve.
+1. **Bugfix**             - Limpando fila de mensagens de display para evitar crash ao destruir objeto de gerenciamento da tela.
+
+## Versão: 8.22.22.0000
+	
+	Descrição: Pacote de rollout com melhorias de performance, retirada de uma perna transacional e hotfixes de produção.
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 29/01/2024
+
+1. **Feature**             - Realizando cache de informações estaticas do pinpad.
+1. **Feature**             - Diminuindo Sleep nos fluxos de looping com interação com o pinpad. Realizando mudanças para melhorias de consumo de CPU. Ajuste na thread de pinpad para remover looping infinito no momento de tratar dados no envio de QRCode para o device.
+1. **Feature**             - Implementando Fluxo da transação consulta status na transação de QRCode.
+1. **Feature**             - Uniformização dos tempos nas mensagens de display de acordo com o tipo de mensagem (normal, info, aprovação, erro).
+1. **Feature**             - Otimizar a exibição das mensagens utilizando uma thread para controle da exibição das mensagens do Client no display.
+1. **Feature**             - Alterando o instalador para remover os arquivos DiagnosticoDPOS.exe e Coletalogs.exe após a instalação.
+1. **Bugfix**              - Adicionando tratamento de path com espaços no método ExtraiArquivos do ExecutaBuscaCertificado.
+1. **Bugfix**              - Correção do comportamento do TextField de porta dentro de contingência.
+1. **Feature**             - Alterando a lógica do campo que reporta a instalação do client para que também verifique se o tipo de instalação é TefPop ou WebCheckout
+
+## Versão: 8.22.21.0402
+	
+	Descrição: Bugfix novo fluxo de atualização de tabelas
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 05/12/2023
+
+1. **Bugfix**              - Validação para ver se pinpad está ativo no Paykit e o fluxo não entrar em looping para verificação de tabelas
+
+## Versão: 8.22.21.0401
+	
+	Descrição: Bugfix novo fluxo de atualização de tabelas
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 30/11/2023
+
+1. **Bugfix**              - Correção para que o client não fique atualizando tabelas a todo momento de forma indevida e Adição de mensagem informativa em caso de atualização de tabelas.
+
+## Versão: 8.22.21.0400
+	
+	Descrição: Otimização fluxo transacional da carga de tabelas e na comunicação com o pinpad
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 10/11/2023
+
+1. **Feature**             - Verificado integridade dos arquivos de tabelas e forçando atualização de tabelas quando necessário.
+1. **Feature**             - Suporte a novo campo que força a atualização de tabelas.
+1. **Feature**             - Refatorando Historico tempos resposta e historico erros local e mantendo a retro compatibilidade
+1. **Feature**             - Ajustando fluxo de resolução de pendências para funcionar com a retro compatibilidade
+1. **Feature**             - Atualização das configurações do client de forma remota 
+1. **Bugfix**              - Fechando conexão com o pinpad após a atualização de tabelas
+1. **Feature**             - Exportando método de atualização de tabelas para automação e adicionando sua utilização no dposconfig
+1. **Feature**             - Alterando cor e nomes do menu do dposconfig
+1. **Feature**             - Otimizar processo de coleta de informações pinpad
+1. **Feature**             - Refatorar lógica fallback QR Code (Transação de Crédito)
+1. **Feature**             - Ajuste do fluxo para fazer a atualização de tabelas apenas quando necessário.
+1. **Feature**             - Cache dos campos recebidos durante a atualização de tabelas
+1. **Bugfix**              - Correção do comportamento da ExecutaTransacaoEspecialColetaInformacaoPinpad para exibir mensagens de coleta e de erro.
+1. **Bugfix**              - Correção do comportamento na reimpressão cupom completa caso não permita alteração. 
+1. **Feature**             - Merge client x64 Windows
+
+## Versão: 8.22.21.0005
+
+	Descrição: Corrigindo processo de baixar certificado digital automatico, crash da transação private label completa e ajuste no comportamento do método trim
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 16/01/2024
+
+1. **Feature**             - Implementando coleta pinpad ao client (Exibe Imagem).
+1. **Hotfix**              - Correção de erros nas transações de saque completa e private label completa que originava crash.
+1. **Hotfix**              - Corrigindo método que baixa o certificado digital automaticamente.
+
+## Versão: 8.22.21.0004
+    
+	Descrição: Correção débito pré-datado.
+	Plataforma: Ubuntu 20.04 x64
+	Data: 04/01/2024
+    
+1. **Bugfix**              - Negando operações de Débito Pré-datado quando não habilitadas e não permite alteração para Cielo.
+
+### Links:
+1. [Binários 8.22.21.0004](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EpxeldTcdFRMoMPEiPEQXEgBwg8mEcnj1h1wBPcRySSVXw?e=GCHKck)
 
 ## Versão: 8.22.21.0003
 	
 	Descrição: Correção no instalador do Paykit, processo para aguardar serviço de telas ficar pronto e correção na comunicação com pinpad ABECS no Windows.
-	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Plataforma: Ubuntu 20.04 x64
 	Data: 11/12/2023
 
 ### Notes:
-1. Hotfix              - Ajuste para que o paykit aguarde o serviço de telas terminar de se processar para somente após isso tentar se comunicar.
-1. Hotfix              - Correção para que o atalho criado para o VerifNovaVersao no Windows Startup esteja correto em sistemas com linguagem apenas em Portugues
-1. Hotfix              - Correção para ajustar a comunicação de pinpads ABECS em máquinas TS.
+1. **Hotfix**              - Ajuste para que o paykit aguarde o serviço de telas terminar de se processar para somente após isso tentar se comunicar.
+1. **Hotfix**              - Correção para que o atalho criado para o VerifNovaVersao no Windows Startup esteja correto em sistemas com linguagem apenas em Portugues
+1. **Hotfix**              - Correção para ajustar a comunicação de pinpads ABECS em máquinas TS.
 
 ### Links:
 1. [Binários 8.22.21.0003](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/EigkYfWU_ehOoB929Q5hGDwBXYLyNjyck5se10r6upLifA?e=q0gkxu)
 
 ## Versão: 8.22.21.0002
+
 	Descrição: Correção para exibir mensagens corretas de acordo com o retorno da adquirente
 	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
 	Data: 16/11/2023
 
-1. Bugfix              - Ajustando retorno da FinishChip em pinpads ABECS para identificar corretamente o motivo em caso de transação negada.
+1. **Bugfix**              - Ajustando retorno da FinishChip em pinpads ABECS para identificar corretamente o motivo em caso de transação negada.
 
 ## Versão: 8.22.21.0001
 
@@ -29,8 +140,8 @@
 	Data: 05/09/2023
 
 ### Notes:
-1. Bugfix               - Correção alocação de memoria em transações com tarja
-1. Bugfix               - Correção da criação de pastas na instalação do client compartilhado
+1. **Bugfix**               - Correção alocação de memoria em transações com tarja
+1. **Bugfix**               - Correção da criação de pastas na instalação do client compartilhado
 
 
 ### Links:
@@ -43,29 +154,29 @@
 	Data: 02/08/2023
 
 ### Notes:
-1. Feature              - Adicionando método ConsultaCadastroLoja para automação obter os dados de Empresa e Loja retornados pelo TEF a partir do CNPJ.
-1. Feature              - Adicionando método ObtemDadosConfigurados para automação obter os dados de Empresa, Loja, CNPJ, IP e Porta do servidor TEF.
-1. Feature              - Adição de campo novo para sinalizar o TEF o tipo de instalação do client
-1. Bugfix               - Alterando método para parsear inteiro para hexa.
-1. Feature              - Permitir apenas uma conexão nas telas do Client
-1. Feature              - Carregando dlls da pasta do usuário ao invés da instalação
-1. Feature              - DPOSConfig utilizando a DPOSDRV para configuração do ambiente inicial de um novo PDV Compartilhado e validações de dados
-1. Feature              - Atualizando o coletor de logs, para capturar logs em qualquer tipo de instalação do client
-1. Feature              - Trava para que apenas 1 atualizador de versão execute na máquina TS
-1. Feature              - Remoção dos arquivos de configuração na desinstalação do client
-1. Feature              - Criação de link para iniciar o atualizador de versão no startup
-1. Feature              - Atualizando método atualização remota para utilizar o arquivo de configuração correto
-1. Feature              - Adicionando método para automação obter diretório de cupons de forma programática.
-1. Feature              - Movendo dados da ultima transação para o ini de registro da execução do client
-1. Feature              - Criação do arquivo de configuração e diretórios do ambiente compartilhado.
-1. Feature              - Adequação do instalador para utilização em ambiente compartilhado
-1. Feature              - Ajustar o client para trabalhar com diferentes arquivos de configuração
-1. Feature              - Tratamento de erro para pinpads sem chave de criptografia de dados da rede.
+1. **Feature**              - Adicionando método ConsultaCadastroLoja para automação obter os dados de Empresa e Loja retornados pelo TEF a partir do CNPJ.
+1. **Feature**              - Adicionando método ObtemDadosConfigurados para automação obter os dados de Empresa, Loja, CNPJ, IP e Porta do servidor TEF.
+1. **Feature**              - Adição de campo novo para sinalizar o TEF o tipo de instalação do client
+1. **Bugfix**               - Alterando método para parsear inteiro para hexa.
+1. **Feature**              - Permitir apenas uma conexão nas telas do Client
+1. **Feature**              - Carregando dlls da pasta do usuário ao invés da instalação
+1. **Feature**              - DPOSConfig utilizando a DPOSDRV para configuração do ambiente inicial de um novo PDV Compartilhado e validações de dados
+1. **Feature**              - Atualizando o coletor de logs, para capturar logs em qualquer tipo de instalação do client
+1. **Feature**              - Trava para que apenas 1 atualizador de versão execute na máquina TS
+1. **Feature**              - Remoção dos arquivos de configuração na desinstalação do client
+1. **Feature**              - Criação de link para iniciar o atualizador de versão no startup
+1. **Feature**              - Atualizando método atualização remota para utilizar o arquivo de configuração correto
+1. **Feature**              - Adicionando método para automação obter diretório de cupons de forma programática.
+1. **Feature**              - Movendo dados da ultima transação para o ini de registro da execução do client
+1. **Feature**              - Criação do arquivo de configuração e diretórios do ambiente compartilhado.
+1. **Feature**              - Adequação do instalador para utilização em ambiente compartilhado
+1. **Feature**              - Ajustar o client para trabalhar com diferentes arquivos de configuração
+1. **Feature**              - Tratamento de erro para pinpads sem chave de criptografia de dados da rede.
 
 ## Versão: 8.22.20.1119
 
 	Descrição: Correção fluxo transação offline Cielo
-	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Plataforma: Ubuntu 22.04 x64 e Ubuntu 20.04 x64
 	Data: 24/08/2023
     
 ### Notes:
@@ -78,7 +189,7 @@
 ## Versão: 8.22.20.1118
 
 	Descrição: Corrigindo processamento de log cartão pre pago
-	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Plataforma: Windows x32, Ubuntu 20.04 x64
 	Data: 19/07/2023
     
 ### Notes:

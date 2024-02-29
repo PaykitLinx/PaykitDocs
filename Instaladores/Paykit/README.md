@@ -1,15 +1,31 @@
 # RELEASE NOTES:
 
+## Versão: 8.22.22.0006
+	
+	Descrição: Correções realizadas durante a certificação de versão
+	Plataforma: Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 15/02/2024
+
+1. **Hotfix**             - Deletando cache a cada transação para não acumular dados.
+
+### Links:
+1. [Binários 8.22.22.0006](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/Ejw-2TSbwOZIo04AZf4Ri4sBpH5Yb2cGBYM1lDQpLeh14A?e=rNlKid)
+
+## Versão: 8.22.22.0005
+	
+	Descrição: Correções realizadas durante a certificação de versão
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 15/02/2024
+
+1. **Hotfix**             - Realizando cache de dados necessários para verificação de tabelas.
+
 ## Versão: 8.22.22.0004
 	
 	Descrição: Correções realizadas durante a certificação de versão
-	Plataforma: Windows x32
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
 	Data: 15/02/2024
 
 1. **Bugfix**             - Alteração de passo que faz o envia da consulta status QR para imprimir comprovante.
-
-### Links:
-1. [Binários 8.22.22.0004](https://grupolinx-my.sharepoint.com/:f:/g/personal/ped_payhub_tef_linx_com_br/Esgzr9e9EGpJqax2HRWY1aoBNMRkLQXqoQfD35ClXxsfGA?e=dRCl5h)
 
 ## Versão: 8.22.22.0003
 	Descrição: Correções realizadas durante a certificação de versão

@@ -1,5 +1,63 @@
 # RELEASE NOTES:
 
+## Versão: 8.22.22.0012
+
+    Descrição: Correção de problemas na certificação
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 18/04/2024
+
+1. **Hotfix**             - Correção na carga de tabelas quando a automação mantém a DPOSDRV carregada entre transações
+
+## Versão: 8.22.22.0011
+
+    Descrição: Correção de problemas na certificação
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 16/04/2024
+
+1. **Hotfix**             - Correção no calculo do MD5 dos arquivos e chaves de cache
+
+## Versão: 8.22.22.0010
+
+    Descrição: Correção de problemas na certificação
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 12/04/2024
+
+1. **Hotfix**             - Registrando ponteiro para callback para função de bipe, e colocando verificação de nullpointer para evitar crash
+
+## Versão: 8.22.22.0009
+
+    Descrição: Correção de problemas na certificação
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 04/04/2024
+
+1. **Hotfix**             - Corrigindo comportamento do objeto string entre Windows e Linux
+
+## Versão: 8.22.22.0008
+
+    Descrição: Correção de problemas na certificação
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 28/03/2024
+
+1. **Hotfix**             - Corrigindo deadlock na configuração da otimização de telas
+
+## Versão: 8.22.22.0007
+
+    Descrição: Implementacao da consulta DCC para RedeCard. Adição da tag 84 para rede Cielo.
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 15/03/2024
+
+1. **Hotfix**             - Corrigindo fluxo de adição do pinpad keymap
+1. **Hotfix**             - Corrigindo fluxo de coleta das informações estáticas do pinpad
+1. **Feature**            - Validação das tabelas recebidas do TEF, para o Paykit se auto-recuperar em caso de tabelas vazias
+1. **Feature**            - Gerar nova release de produção com DCC, tag 84 (Cielo) e consistência de tabelas
+1. **Feature**            - Adiciona tag 84 a lista da GOONCHIP rede Cielo.
+1. **Bugfix**             - Ajustes DE48 no DCC débito
+1. **Bugfix**             - Ajusta fluxo DCC para pedir senha após a consulta
+1. **Feature**            - Adição de logs para retornos sem consulta DCC
+1. **Bugfix**             - Corrige falta de envio da transação de advice no débito
+1. **Bugfix**             - Ajuste no conteúdo enviado no BIT48 da mensagem de consulta DCC
+1. **Feature**            - Implementacao da consulta DCC para RedeCard.
+
 ## Versão: 8.22.22.0006
 	
 	Descrição: Correções realizadas durante a certificação de versão

@@ -1,5 +1,30 @@
 # RELEASE NOTES:
 
+## Versão: 8.22.22.0015
+   
+    Descrição: Correção do fluxo de cancelamento
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 09/05/2024
+
+1. **Hotfix**             - Ajustando método LeIdentificacaoPinPad para que não corte os espaços em branco no final do número de série.
+1. **Hotfix**             - Ajustando fluxo de cancelamento para não exibir o seleciona opção de última transação ou outra transação em caso de transação completa.
+
+## Versão: 8.22.22.0014
+   
+    Descrição: Correção de problemas na homologação.
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 07/05/2024
+
+1. **Hotfix**             - Corrige problema de travamento ao realizar uma transação com o pdv sem comunicação com o TEF na versão linux.
+
+## Versão: 8.22.22.0013
+   
+    Descrição: Correção de problemas na certificação
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 19/04/2024
+
+1. **Hotfix**             - Corrige a inicialização do diretorio dos certificados nas chamadas para busca de certificado em instalações que utilizam o modelo embarcado.
+
 ## Versão: 8.22.22.0012
 
     Descrição: Correção de problemas na certificação

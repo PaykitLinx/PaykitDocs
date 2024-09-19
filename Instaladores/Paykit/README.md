@@ -1,5 +1,73 @@
 # RELEASE NOTES:
 
+##  Versão: 8.22.22.0022
+  
+    Descrição: Correções em homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 11/09/2024
+
+1. **Hotfix**             - Fallback para placas gráficas sem suporte a OpenGL 2.0
+
+##  Versão: 8.22.22.0021
+  
+    Descrição: Correções em homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 10/09/2024
+
+1. **Hotfix**             - Correção de erro no instalador quando está fazendo atualização de versões com versão legada
+
+##  Versão: 8.22.22.0020
+  
+    Descrição: Correções em homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 28/08/2024
+
+1. **Hotfix**             - Correção para exibir o código do erro junto à mensagem do erro
+1. **Hotfix**             - Correção para enviar o CP_INFO_INSTALACAO_CLIENT em todas as solicitações ao TEF
+1. **Hotfix**             - Correção de erro no instalador quando está fazendo atualização de versões com GP
+1. **Hotfix**             - Adicionando logs de informações de controle para atualização de tabelas.
+1. **Bugfix**             - Ajustando método de verificação de seção nos arquivos ini's para ser case insensitive.
+1. **Hotfix**             - Priorizando o campo do TEF para coletar o nome da Rede.
+
+##  Versão: 8.22.22.0019
+  
+    Descrição: Alteração no fluxo de Pipeline da aplicação
+    Plataforma: Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 08/07/2024
+
+1. **Feature**            - Inclusão do fluxo de geração do Ubuntu 20.04 x64 e Ubuntu 20.04 x32.
+1. **Hotfix**             - Impedindo criação do arquivo dpos.ini dentro da pasta virtualstore pelos binários das aplicações DPOSApp e GPDirecao.
+
+##  Versão: 8.22.22.0018
+  
+    Descrição: Hotfixes produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 08/07/2024
+
+1. **Hotfix**             - Inclusão de persistência nos dados da solicitação da automação para os casos de reinicio automatico de transação.
+1. **Hotfix**             - Correção no processo de ativação da atualização automática e escolha de servidor
+1. **Hotfix**             - Impedindo criação do arquivo dpos.ini dentro da pasta virtualstore pelas DLL's do Paykit.
+
+##  Versão: 8.22.22.0017
+  
+    Descrição: Hotfixes produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 21/06/2024
+
+1. **Hotfix**             - Ajuste no fluxo da tranação de débito da client visa para que processe os valores de saque e taxa embarque recebidos pela automação e respeitem o permite alteração.
+1. **Hotfix**             - Ajuste no instalador, para que caso de problema para processar as constantes win e localappdata (Instalacao Padrao e compartilhada), o processamento siga via variaveis de ambiente.
+1. **Hotfix**             - Ajuste no processamento das telas do Paykit, para encerrar adequadamente e limpeza da fila de processamento.
+1. **Hotfix**             - Validação se foi possível manipular o arquivo INI nos métodos de confirmação da transação e finalização.
+
+##  Versão: 8.22.22.0016
+  
+    Descrição: Correção do erro T014 - Cartão Inválido, no retorno da Consulta Parâmetros, da operação TransacaoCancelamentoConfirmada.
+    Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+    Data: 09/05/2024
+
+1. **Hotfix**             - Correção na transação de telemarketing (CancelamentoConfirmada), para enviar ao TEF a forma de entrada digitado nessa transação.
+
+
 ## Versão: 8.22.22.0015
    
     Descrição: Correção do fluxo de cancelamento

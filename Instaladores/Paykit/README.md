@@ -5,7 +5,7 @@
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
     Data: 06/06/2025
 
-PAYKIT-1. ** -** Bugfix              - Correção para enviar os dados de criptografia de dados sensiveis corretamente
+1. **Bugfix**              - Correção para enviar os dados de criptografia de dados sensiveis corretamente
 
 ##  Versão: 8.22.23.0018
     Descrição: Correções

@@ -1,5 +1,333 @@
 # RELEASE NOTES:
 
+##  Versão: 8.22.23.0019
+    Descrição: Correções
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 06/06/2025
+
+PAYKIT-1. ** -** Bugfix              - Correção para enviar os dados de criptografia de dados sensiveis corretamente
+
+##  Versão: 8.22.23.0018
+    Descrição: Correções
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 03/06/2025
+
+1. **Bugfix**              - Evitando de acionar a callback LogTransacaoAtual caso o atributo que armazena o json da transação atual não esteja populado
+1. **Bugfix**              - Adicionando logs para termos registro da interação do usuario no metodo TransacaoFuncoesAdministrativas
+1. **Bugfix**              - Atualizando binário do gerenciador padrão com as ultimas correções da homologação. Versão atual do modulo: 8.22.22.0006
+
+##  Versão: 8.22.23.0017
+    Descrição: Correções
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 23/05/2025
+
+1. **Hotfix**              - Ajustando coleta dos dados do objeto json e corrigindo verificação da formatação do json enviado pela AC.
+1. **Bugfix**              - Corrigindo coleta log transação json, para transações que não seja a ultima.
+1. **Feature**             - Utilizando classe de retorno para tratar os retornos de forma padronizada no paykit
+1. **Feature**             - Sincroninzando release de support 8.22.22.0033
+1. **Feature**             - Cancelamento de pagamento QRCode no TEF, caso o mesmo seja cancelado pelo operador no PDV.
+1. **Bugfix**              - Tratando erro SSL 6 (Conection closed by another side) nas transações de QR, para considerar como um timeout.
+
+##  Versão: 8.22.23.0016
+    Descrição: Correção na exportação de callback de tela
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 14/05/2025
+
+1. **Bugfix**             - Correção na exportação da callback RegPDVImagemAdicional
+1. **Bugfix**             - Correção método de conversão de string para inteiro, para tratar ltrim corretamente
+
+##  Versão: 8.22.23.0015
+    Descrição: Correções
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 09/05/2025
+
+1. **Bugfix**             - Correção na manipulação de memoria a fim de evitar crash por corrupção da heap.
+
+##  Versão: 8.22.23.0014
+    Descrição: Correção no preenchimento dos campos da GetInfo
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 07/05/2025
+
+1. **Hotfix**             - Ajustar envios de campos da GetInfo.
+1. **Hotfix**             - Ajustando paykit para que o mesmo não notifique a automação via as callbacks de tela quando o PIX NFC for processado e o pinpad estiver com problemas de conexão.
+
+##  Versão: 8.22.23.0013
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 25/04/2025
+
+1. **Bugfix**             - Gravar o payment id da transação QRCode na InformacaoTransacaoCorrente.
+
+
+##  Versão: 8.22.23.0012
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 08/04/2025
+
+1. **Bugfix**             - Corrigindo conversão dos dados para log json, para que evite crashs indevidos no retorno das operações.
+
+
+##  Versão: 8.22.23.0011
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 31/03/2025
+
+1. **Bugfix**             - Corrigindo consulta parametro do cartão frota para que sinalize no display corretamente a atualização de tabelas.
+1. **Bugfix**             - Corrigindo processamento da carga de tabelas do pinpad para não excluir registros da leitura do cartão incorretamente.
+
+
+##  Versão: 8.22.23.0010
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 26/03/2025
+
+1. **Hotfix**             - Correção de fluxo na transação QRCode, para o countdown da transação ser em minutos, e a consulta status ser automatica e não manual dependendo da aprovação do operador, e não sumir com o QRCode do pinpad durante a consulta status.
+1. **Bugfix**             - Tratando Json de entrada, para que caso venha um caracter que conflite entre ANSI e UTF-8 não gere problemas para parsear o objeto.
+1. **Bugfix**             - Adicionando instrução para deletar arquivos no linux e assim remover os logs antigos adequadamente.
+1. **Feature**            - Adicionando no log da transação os novos retornos da adyen, sendo estes validade do cartão, numero do cartao e e codigo rede terceiro
+1. **Bugfix**             - Corrigindo versão de testes para validar corretamente os endereços permitidos de conexão com o TEF
+1. **Bugfix**             - Corrigindo geração de logs JSON para as transações Recarga Celular, Crediario, Voucher, Cancelamento, Confirmacao Pre Autorizacao, Private Label, Cartao Frota, Corban, Carga Vale Presente, QRCode.
+
+
+##  Versão: 8.22.23.0009
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 19/03/2025
+
+1. **Bugfix**             - Correção para eliminar handles corretamente no windows (Log, Interface Grafica e threads)
+1. **Feature**            - Trazendo implementações sobre backup do arquivo de configuração do paykit
+1. **Hotfix**             - Correção para que a biblioteca de ini tenha menos acesso ao disco, e forçando flushs do sistema operacional Windows.
+1. **Bugfix**             - Arrumando carregamento da thread de logs, para respeitar as flags do arquivo ini
+1. **Bugfix**             - Desabilitando método para obter o nome de um executável java.
+1. **Bugfix**             - Corrigindo erro da aplicação no carregamento da FinalizaClient no Linux.
+1. **Bugfix**             - Ajustando para que a biblioteca de logs seja carregada corretamente no paykit modelo embarcado.
+1. **Bugfix**             - Adicionando tratativas para evitar crashs no fluxo de atualização de tabelas.
+1. **Bugfix**             - Corrigindo fluxo de cancelamento da transação QRCode.
+
+
+##  Versão: 8.22.23.0008
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 06/03/2025
+    
+1. **Bugfix**             - Ajustando a inicialização e encerramento das threads de display e logs para corrigir crash ao descarregar o paykit.
+
+
+##  Versão: 8.22.23.0007
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 21/02/2025
+
+1. **Bugfix**             - Correção para que o client preencha corretamente a estrutura getinfo reportada ao TEF.
+1. **Bugfix**             - Correção na configuração de empresa,loja e pdv nas transações de teste de rede e consulta de transação
+
+
+##  Versão: 8.22.23.0006
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 19/02/2025
+
+1. **Bugfix**             - Corrigindo criação do cupom para aceitar PDV's de 4 digitos.
+1. **Bugfix**             - Correção no parse do qrcode para o comando chipdirect.
+1. **Bugfix**             - Correção na interação do usuario com a aplicação de interface gráfica, para que os inputs e botões do teclado funcionem da forma correta.
+1. **Bugfix**             - Correção para que a thread de logs não gere crashs ao descarregar a DPOSDRV.
+
+
+##  Versão: 8.22.23.0005
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 13/02/2025
+
+1. **Bugfix**             - Corrigindo ordem das mensagens de display, para que o botão OK fique habilitado nas transações de cancelamento.
+1. **Bugfix**             - Corrigindo problema de atualização de tabelas constantes para pinpads não abecs 
+1. **Bugfix**             - Correção para que o ESC funcione quando o foco não está em nenhum botão
+
+
+##  Versão: 8.22.23.0004
+    Descrição: Correções homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 07/02/2025
+
+1. **Bugfix**             - Corrigindo congelamento da tela do Paykit, quando recebida mensagem com ID divergente.
+1. **Bugfix**             - Correção ObtemDadosConfigurados para evitar invasão de memoria.
+1. **Bugfix**             - Correção na validação da abertura de arquivo ini
+1. **Bugfix**             - Correção crash por conta da dll de logs que estava sendo destruída sem aguardar a thread ser lançada.
+1. **Bugfix**             - Correção crash no fluxo de destruição do objeto de logs.
+1. **Feature**            - Melhorando feedback visual para o usuário no inicio da transação QRCode
+1. **Bugfix**             - Removendo looping interno da callback OperacaoCancelada de dentro do chipdirect e evitando chamadas duplicadas a interface grafica no fluxo PIXNFC.
+1. **Bugfix**             - Corrigindo conversão de dados no log da transação json para QRCode, Credito, Recarga, Debito, Crediario, Voucher, Cancelamento, PreAutorizacao, Private Label, Frota
+1. **Bugfix**             - Corrigindo fluxo de encerramento thread PIXNFC
+
+
+##  Versão: 8.22.23.0003
+    Descrição: Correções homologação PIX NFC
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 05/02/2025
+
+1. **Bugfix**             - Corrigindo crash aplicação nas operações genericas QRCode
+
+
+##  Versão: 8.22.23.0002
+    Descrição: Correções homologação PIX NFC
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 04/02/2025
+
+1. **Bugfix**             - Corrigindo fluxo de pagamento PIX NFC nos pinpads Lane3000 e Lane3600, pois, estes não desligam a antena com o comando APDU.
+
+
+##  Versão: 8.22.23.0001
+    Descrição: Correções homologação PIX NFC
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 29/01/2025
+
+1. **Bugfix**             - Adicionando novos logs na comunicação entre Paykit e display e deixando log criptografado.
+1. **Bugfix**             - Habilitando PIX NFC para pinpads NÃO ABECS e corrigindo fluxo de encerramento da thread do PIX NFC.
+1. **Bugfix**             - Ajustando fluxo para não forçar coleta de valor para a rede Adyen
+
+
+##  Versão: 8.22.23.0000
+    Descrição: Proxima release de rollout do Paykit contendo fixes, QR Linx FULL, PIX NFC e outras otimizações.
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 23/01/2025
+
+1. **Bugfix**             - Correção logica de carregamento da biblioteca de Logs no Linux, e correção para exibir janela de erro do sistema operacional.
+1. **Feature**            - Atualização do binario do GPDirecao.exe para a versão 8.22.22.04 com tratamento de novos campos de requisição e resposta
+1. **Bugfix**             - Remoção da possibilidade de atualização automatica para o Adapter Web.
+1. **Bugfix**             - Corrigindo procura pinpad, para caso não esteja configurada a porta o paykit não gere bug.
+1. **Bugfix**             - Alterado método de leitura da identificação do pinpad para abrir conexão com o pinpad de forma dinamica (Buscando pinpad)
+1. **Bugfix**             - Corrigindo deadlock (thread de log) ao descarregar a DPOSDRV.dll da memoria, e adicionando nova dll nos instaladores e no embarcado (Windows e Linux).
+1. **Feature**            - Novo método ObtemLogTransacaoJson
+1. **Feature**            - Complementando os dados da callback LogTransacaoAtual com todos os dados disponíveis através do novo método ObtemLogTransacaoJson
+1. **Feature**            - Ajuste nos paths criados no arquivo zip do Paykit embarcado
+1. **Feature**            - Implementação PIX NFC para transações na rede Generica
+1. **Feature**            - Alterando processamento dos logs do Paykit (arquivos dbg) para ser assincrono
+1. **Feature**			  - Desabilitando o Campo do DPOS.ini que permite desligar a atualização automática
+1. **Bugfix**             - Corrigindo alocação de mensagem de erro em caso de conexão sem ssl
+1. **Feature**            - Otimizando tempo de verificação de tabelas em caso de falha de conexão
+1. **Feature**            - Adicionando WebCheckout no instalador
+1. **Feature**            - Desanexando aplicativo VerifNovaVersao do processo do Paykit, para ser executado de forma independente e ajustando instalador para reiniciar adapterweb caso necessário 
+1. **Bugfix**             - Corrigindo logs antigos não serem deletados no Linux.
+1. **Bugfix**             - Corrigindo menu para selecionar rede Adyen e outras, e também cache pinpad quando o mesmo não conter a tag PP_PUREVER
+1. **Feature**            - Devolver informação de bandeira para a automação quando rede for Adyen
+1. **Feature**            - Para cartões AMEX se timeout rede, executar o comando FCX
+1. **Feature**            - Merge das implementacoes relativas a especificacao 2.03 da pagseguro
+1. **Bugfix**             - Ajusta retorno da finischip
+1. **Feature**            - Envio para o TEF de campo informando a razao do cancelmento de acordo com a spec 4.03/4.04 Stone
+1. **Bugfix**             - Ajustando instalador Paykit para atualizar adaptadorWeb
+1. **Feature**            - Refatoração para eliminar código inutilizado
+1. **Feature**            - Adiciona funções no paykit para identificar Totem de autoatendimento e WebCheckout Java
+1. **Bugfix**             - Desabilita o botão OK durante o processamento de mensagens e controle de identificação de mensagem enviada para o GrClient
+1. **Feature**            - Nova funcionalidade de entrega de JSON via callback para a Automação
+1. **Bugfix**             - Reinicia transação Voucher após erro "tarja antes de chip"
+1. **Bugfix**             - Corrigindo descrição da rede SigaCred
+1. **Bugfix**             - Correção do crash quando o registro AID recebido esta com tamanho incorreto
+1. **Bugfix**             - Correção na aplicação de roteamento usando o campo lista de bins e aids
+1. **Bugfix**             - Correção do comportamento da criação das tabelas com base no recebimento da lista de bins e aids
+1. **Feature**            - Tratamento dos AIDs recebidos conforme o contexto do roteamento
+1. **Feature**            - Ignorando lista de bins e AID's de contexto incorreto para o split de pagamentos
+
+
+##  Versão: 8.22.22.1300
+    Descrição: Versão de Projeto Integração completa QRLinx
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 20/12/2024
+
+1. **Bugfix**             - Corrigir problemas de manipulação de memoria e padronização de retorno para a automação.
+1. **Feature**            - Ajustes para considerar fluxo do NuPay, em transações QR Code na rede QRLinx
+1. **Feature**            - Implementando nova callback de dados da transação corrente
+1. **Feature**            - Implementando operação genérica QRLinx
+1. **Feature**            - Suporte a novo formato de entrada de dados para transação QRCode
+1. **Feature**            - Adicionando passo de entrada do motivo de cancelamento, para cancelamentos de pagamentos via QR Code na rede QRLinx
+
+
+##  Versão: 8.22.22.0603
+	Descrição: Versão de certificação rede Sicoob
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 03/10/2024
+
+1. **Bugfix**             - Sicoob não suporta transações offline
+
+
+##  Versão: 8.22.22.0602
+	Descrição: Versão de certificação rede Sicoob
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 27/09/2024
+
+1. **Bugfix**             - Ajusta nome da rede para Sipag-Sicoob
+
+
+##  Versão: 8.22.22.0601
+	Descrição: Versão de certificação rede Sicoob
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 16/05/2024
+
+1. **Bugfix**             - Alteração para a rede Sicoob para executar corretamente o teste "AXP EMV 015" do roteiro da ABECS
+
+
+##  Versão: 8.22.22.0600
+	Descrição: Versão de certificação rede Sicoob
+	Plataforma: Windows x32, Ubuntu 22.04 x64 e Ubuntu 20.04 x64
+	Data: 08/05/2024
+
+1. **Feature**            - Adiciona nova rede Sicoob
+1. **Feature**            - Adiciona informação capacidade do pinpad (PP_CAPAB)
+1. **Bugfix**             - Corrige envio de informações do pinpad para o TEF
+1. **Bugfix**             - Rede Generica: Resolve a passagem direta de cartões de tarja e exige fallback no chip.
+
+
+##  Versão: 8.22.22.0028
+    Descrição: Hotfix integração web legada
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 10/12/2024
+
+1. **Hotfix**             - Correção para que a integração Web Java colete o path dos cupons pelo método do paykit e assim seja dinamica
+
+
+##  Versão: 8.22.22.0027
+    Descrição: Hotfix de produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 11/11/2024
+
+1. **Hotfix**             - Ajustando retorno em caso de não recebimento do campo de status do QRCode na transação de Status QRCode
+1. **Hotfix**             - Correção no metodo ConsultaTransacao que estava criando a estrutura de pastas do ambiente de telemarketing
+1. **Hotfix**             - Ajuste na ConsultaTransacao para aceitar parâmetro pNumeroPDV de 4 bytes
+1. **Hotfix**             - Força a carga de tabelas quando ocorrer o erro PP_TABEXP
+1. **Hotfix**             - Ajuste no fluxo de reinicio transacional da rede Redecard
+1. **Bugfix**             - Controle do envio e recebimento de mensagens entre o Client e o GrClient
+
+
+##  Versão: 8.22.22.0026
+    Descrição: Hotfix de produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 23/10/2024
+
+1. **Hotfix**             - Ajuste no retorno do FinalizaTransacao em caso de erro
+
+
+##  Versão: 8.22.22.0025
+    Descrição: Hotfix de produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 08/10/2024
+
+1. **Hotfix**             - Adição de novas validações na manipulação dos arquivos ini.
+
+
+##  Versão: 8.22.22.0024
+    Descrição: Hotfix de produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 04/10/2024
+
+1. **Hotfix**             - Melhoria no tratamento de erro na abertura de arquivos de configuração
+
+
+##  Versão: 8.22.22.0023
+    Descrição: Hotfix de produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 25/09/2024
+
+1. **Hotfix**             - Corrigindo fluxo de encerrar o processamento das callbacks de tela
+
+
 ##  Versão: 8.22.22.0022
   
     Descrição: Correções em homologação
@@ -8,6 +336,7 @@
 
 1. **Hotfix**             - Fallback para placas gráficas sem suporte a OpenGL 2.0
 
+
 ##  Versão: 8.22.22.0021
   
     Descrição: Correções em homologação
@@ -15,6 +344,7 @@
     Data: 10/09/2024
 
 1. **Hotfix**             - Correção de erro no instalador quando está fazendo atualização de versões com versão legada
+
 
 ##  Versão: 8.22.22.0020
   
@@ -29,6 +359,7 @@
 1. **Bugfix**             - Ajustando método de verificação de seção nos arquivos ini's para ser case insensitive.
 1. **Hotfix**             - Priorizando o campo do TEF para coletar o nome da Rede.
 
+
 ##  Versão: 8.22.22.0019
   
     Descrição: Alteração no fluxo de Pipeline da aplicação
@@ -37,6 +368,7 @@
 
 1. **Feature**            - Inclusão do fluxo de geração do Ubuntu 20.04 x64 e Ubuntu 20.04 x32.
 1. **Hotfix**             - Impedindo criação do arquivo dpos.ini dentro da pasta virtualstore pelos binários das aplicações DPOSApp e GPDirecao.
+
 
 ##  Versão: 8.22.22.0018
   
@@ -58,6 +390,7 @@
 1. **Hotfix**             - Ajuste no instalador, para que caso de problema para processar as constantes win e localappdata (Instalacao Padrao e compartilhada), o processamento siga via variaveis de ambiente.
 1. **Hotfix**             - Ajuste no processamento das telas do Paykit, para encerrar adequadamente e limpeza da fila de processamento.
 1. **Hotfix**             - Validação se foi possível manipular o arquivo INI nos métodos de confirmação da transação e finalização.
+
 
 ##  Versão: 8.22.22.0016
   

@@ -1,5 +1,19 @@
 # RELEASE NOTES:
 
+## Versão: 8.22.23.0021
+    Descrição: Correção na transação de cartão de crédito nas redes que utilizando criptografia de dados sensisveis
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 21/06/2025
+
+1. **Bugfix**              - Correção na formatação dos dados para criptografia e evitar crash da aplicação no Linux
+
+## Versão: 8.22.23.0020
+    Descrição: Correção na transação de cartão de crédito usando QRCode
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 20/06/2025
+
+1. **Bugfix**              - Correção no fluxo de chamada para a transação de QRCode dentro do fluxo de cartão de crédito
+
 ##  Versão: 8.22.23.0019
     Descrição: Correções
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32

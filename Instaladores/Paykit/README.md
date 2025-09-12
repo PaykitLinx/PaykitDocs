@@ -1,13 +1,58 @@
 # RELEASE NOTES:
 
-## Versão: 8.22.23.0021
+##  Versão: 8.22.23.0027
+    Descrição: Correção manipulação de dados
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 14/08/2025
+
+1. **Bugfix**              - Removendo manipulações desnecessarias de dados
+1. **Bugfix**              - Ajustes em bibliotecas para aumentar segurança
+1. **Bugfix**              - Adicionando criptografia de dados no fluxo de confirmação e desfazimento
+
+##  Versão: 8.22.23.0026
+    Descrição: Correção manipulação de dados e gerenciador padrão
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 08/08/2025
+
+1. **Bugfix**              - Removendo instruções desnecessarias na comunicação com o pinpad
+
+##  Versão: 8.22.23.0025
+    Descrição: Correção manipulação de dados e gerenciador padrão
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 07/08/2025
+
+1. **Bugfix**              - Alterando construtores e destrutores de classes bases para aumentar segurança e refatoração de memsets.
+1. **Hotfix**              - Atualização do GP para tratar corretamente o metodo ObtemLogTransacaoJson e não gerar crashs
+
+##  Versão: 8.22.23.0024
+    Descrição: Nova feature
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 31/07/2025
+
+1. **Bugfix**               - Remoção de dados manipulados desnecessariamente para confirma e desfazimento
+
+##  Versão: 8.22.23.0023
+    Descrição: Nova feature
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 11/07/2025
+
+1. **Feature**              - Método para obter dados do bin e data validade cartao
+
+##  Versão: 8.22.23.0022
+    Descrição: Correção no tratamento de transações desfeitas que previamente retornaram erro na confirmação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 01/07/2025
+
+1. **Bugfix**              - Correção no tratamento de transações desfeitas que previamente retornaram erro na confirmação
+
+##  Versão: 8.22.23.0021
     Descrição: Correção na transação de cartão de crédito nas redes que utilizando criptografia de dados sensisveis
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
     Data: 21/06/2025
 
 1. **Bugfix**              - Correção na formatação dos dados para criptografia e evitar crash da aplicação no Linux
 
-## Versão: 8.22.23.0020
+##  Versão: 8.22.23.0020
     Descrição: Correção na transação de cartão de crédito usando QRCode
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
     Data: 20/06/2025

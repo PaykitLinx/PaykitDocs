@@ -1,5 +1,60 @@
 # RELEASE NOTES:
 
+##  Versão: 8.22.23.0034
+    Descrição: Correção do método LeIdentificacaoPinPad
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 24/10/2025
+
+1. **bugfix**               - Corrigindo método LeIdentificacaoPinPad para não acionar callback de tela indevidamente.
+
+##  Versão: 8.22.23.0033
+    Descrição: Correções de crash da aplicação e adicionando features
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 16/10/2025
+
+1. **Feature**              - Verificação do AID do cartão na lista de transações esclusivas
+
+##  Versão: 8.22.23.0032
+    Descrição: Correções de crash da aplicação e adicionando features
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 07/10/2025
+
+1. **bugfix**              - Corrigindo crash ao realizar transações pelo menu FITCard em transações frota
+1. **bugfix**              - Alterando solução para compatibilizar em todos os sistemas operacionais que o Paykit é disponibilizado
+
+##  Versão: 8.22.23.0031
+    Descrição: Correções de crash da aplicação e adicionando features
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 06/10/2025
+
+1. **bugfix**              - Correção para evitar que a biblioteca de logs gere crashs em locais inesperados.
+1. **Feature**             - Alterando comunicação com o server para semi-assincrona sempre.
+1. **bugfix**              - Correção para que o log da Log da TransacaoCorrente não gere crashs caso receba dados com acentuação.
+1. **Feature**             - Adicionando ObtemDadosCartaoJsonCompleta para parametrizar Debito/Credito e inserindo novo retorno dos ultimos 4 digitos do cartão
+
+##  Versão: 8.22.23.0030
+    Descrição: Correção na consulta DCC com a adquirente Redecard
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 25/09/2025
+
+1. **bugfix**              - Correção para evitar crash ao realizar uma consulta DCC utilizando a adquirente Redecard.
+
+##  Versão: 8.22.23.0029
+    Descrição: Correção de vazamento
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 09/09/2025
+
+1. **bugfix**              - Ajustes na compilação do CentOS 7.5
+
+##  Versão: 8.22.23.0028
+    Descrição: Correção de vazamento
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 09/09/2025
+
+1. **bugfix**              - Resolvendo bug de travamento do Botão OK nas Funções administrativas
+1. **bugfix**              - Correção na gravação do JSON de retorno, estava tratando objetos como string
+1. **bugfix**              - Remoção de cast indevido na leitura das informações retornadas do pinpad
+
 ##  Versão: 8.22.23.0027
     Descrição: Correção manipulação de dados
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32

@@ -1,5 +1,163 @@
 # RELEASE NOTES:
 
+##  Versão: 8.22.24.0009
+    Descrição: Correções no Paykit
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 26/02/2026
+
+1. **Feature**            - Implementado suporte a plataforma Liquid.
+1. **Bugfix**             - Correção para evitar o envio de dados inválidos para o pinpad no comando GOX usando o client Redecard.
+
+##  Versão: 8.22.24.0008
+    Descrição: Correções no Paykit
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 16/01/2026
+
+1. **Feature**            - Implementando timeout de 30 segundos ao iniciar conexão com o TEF.
+1. **Feature**            - Otimização de rotina de leitura de dados vindos do TEF.
+
+##  Versão: 8.22.24.0007
+    Descrição: Correções no Paykit
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 16/01/2026
+
+1. **Bugfix**             - Correção de crash ocasional ao confirmar ou desfazer uma transação no linux.
+1. **Feature**            - Adicionando geração de stacktrace no arquivo .err quando um crash ocorre no linux mesmo em builds de release
+
+##  Versão: 8.22.24.0006
+    Descrição: Correções no Paykit
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 06/01/2026
+
+1. **Bugfix**             - Correção na transação FitCard para exibir pergunta para confirmar cancelamento
+1. **Bugfix**             - Inclusão de bibliotecas 64 bits faltantes para execução do GRClient
+
+##  Versão: 8.22.24.0005
+    Descrição: Correções no Paykit
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 30/12/2025
+
+1. **Bugfix**             - Alterando fluxo do comando GTK no paykit para que execute somente uma vez
+
+##  Versão: 8.22.24.0004
+    Descrição: Correções de problemas no Gerenciador Padrao e fixes no Paykit
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 05/12/2025
+
+1. **Bugfix**             - Correção na passagem de parametros para gravação de mensagens no log
+1. **Bugfix**             - Corrigindo retro-compatibilidade da função EBX, para manter o mesmo comportamento da release de rollout do Paykit anterior.
+1. **Bugfix**             - Remoção funcionalidade de gravação de MAC para a adquirente Rede
+1. **Bugfix**             - Aplicar as correções da GTK realizadas
+1. **Bugfix**             - Atualização do arquivo GPDirecao com correções de problemas. 
+1. **Bugfix**             - Inclusão das correções das versões 8.22.23.0035 e 8.22.23.0036
+
+##  Versão: 8.22.24.0003
+    Descrição: Correções de itens encontrados durante homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 27/10/2025
+
+1. **Bugfix**             - Corrigindo Paykit para coletar todos os dados do cartão necessarios para extrair o grupo do cartao (Ticketlog).
+1. **Bugfix**             - Trazendo release 8.22.23.0034 para esta versao
+
+##  Versão: 8.22.24.0002
+    Descrição: Correções de itens encontrados durante homologação
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 23/10/2025
+
+1. **Bugfix**             - Trazendo alterações da release 8.22.23.0033 para dentro desta release
+1. **Bugfix**             - Correção para que as transações QR do client padrão finalizem sem erros.
+1. **Bugfix**             - Remover seleção de AID no pinpad quando for cartão Banese com produtos Banese e Elo no mesmo plastico
+1. **Bugfix**             - Manter o valor da transação que foi coletado nos casos de usar tarja em cartão com chip
+
+##  Versão: 8.22.24.0001
+    Descrição: Sincronização com hotfixes de produção
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 13/10/2025
+
+1. **Bugfix**             - Trazendo fixes de produção da release 8.22.23.0031 e 8.22.23.0032
+
+##  Versão: 8.22.24.0000
+    Descrição: Liberação dos projetos HubElo, Punto, FrotaJson, Picpay, Stone 4.10, Pagseguro 2.05, Paykit White Label e Teclado Virtual.
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32
+    Data: 15/09/2025
+
+1. **Bugfix**             - Corrigindo mensagem de operador e pinpad
+1. **Bugfix**             - Corrigindo mensagem de erro na FCX padrao
+1. **Bugfix**             - Tratando novos AID's de voucher da Elo para Elo PAT com o processamento do aids exclusivos.
+1. **Bugfix**             - Ajustando fluxo da transação de débito completa com saque.
+1. **Bugfix**             - Corrigindo exibição de mensagens no pinpad contendo caracteres de nova linha
+1. **Bugfix**             - Correção da captura de senha no fluxo de SingleTap
+1. **Feature**            - Implementação SingleTap Pagseguro
+1. **Feature**            - Adicionando transação troco saque para a rede pagseguro somente na transação de débito completa.
+1. **Bugfix**             - Correção no fluxo do single tap na pagseguro para rebater ao tef o numero de serie da criptografia     
+1. **Feature**            - Incluída seleção das modalidades da operação (credito, debito ou QRPix) dentro do fluxo da transação QRCode para a rede PagSeguro.
+1. **Feature**            - Enviando codigo de pais para o tef nas transações de crédito, debito, privatelabel e voucher na clientpadrao.
+1. **Feature**            - Campos novos para envio dos dados de transação Ecommerce 3DS.
+1. **Bugfix**             - Correção do envio dos campos com os dados obtidos pela GIX de pinpads abecs
+1. **Bugfix**             - Não envia Advice para transações aprovadas online e negadas pelo cartão
+1. **Bugfix**             - Separação menu QRCode para crédito e débito
+1. **Bugfix**             - Correção para que os campos setados pelo comando GTK subam corretamente
+1. **Feature**            - Implementação comando GTK
+1. **Feature**            - Implementar Transação Carnê para PagSeguro
+1. **Feature**            - Aumento do timeout no cancelamento devido a retentativas inseridas na PagSeguro
+1. **Feature**            - Transação QRCode para especificação da PagSeguro
+1. **Bugfix**             - Corrige criptografia de dados sensíveis para todas as redes
+1. **Bugfix**             - Corrige valor da transação com 12 dígitos na criptografia
+1. **Bugfix**             - Transação de cancelamento com confirmação e sem desfazimento
+1. **Bugfix**             - Adiciona leitura do tipo de cartão
+1. **Bugfix**             - Corrige envio do envio de reason code
+1. **Bugfix**             - Padroniza informação da razão do desfazimento
+1. **Bugfix**             - Não envia transação Advice em caso de erro de comunicação
+1. **Bugfix**             - Ajusta retorno da FCX para a PagSeguro
+1. **Bugfix**             - Corrige chamada da GetTracks na confirmação de pré-autorização
+1. **Bugfix**             - Adiciona opção QRCode no débito
+1. **Feature**            - Ajuste para o log registrado HUBELO seguir o padrão da transação original.
+1. **Bugfix**             - Alteração na rede Ticketlog para caso o paykit não consiga capturar o grupo de cartão da trilha, use o grupo informado pelo server.
+1. **Bugfix**             - TransacaoCartaoFrota(Json) Envio dos campos tipoOperacao e codigoRede como int mesmo quando é coletado em uma lista de opções.
+1. **Bugfix**             - TransacaoCartaoFrota(Json) Erro ao executar a transação
+1. **Bugfix**             - Ajustes no envio do campo de transação completa nas transações de cartão frota
+1. **Merge**              - Inclusão do campo de identificação de grupo do cartão na transação de consulta parâmetros para transação Frota Json.
+1. **Feature**            - Refatorando uso da tabela D5 para novo modelo
+1. **Feature**            - Adicionando transação de frota json para dll ClientVisa
+1. **Feature**            - Utilizar o conteudo do campo de Codigo da Rede recebido na transação de frota JSON evitando a exibição da lista de seleção
+1. **Bugfix**             - Corrigindo right pad da criptografia de dados e deixando configuravel o padrao dos dados criptogafados
+1. **Bugfix**             - Corrigindo modo de criptografia para Mercado Pago e calculo do tamanho do buffer para criptografia
+1. **Bugfix**             - Corrigindo modo de criptografia para Picpay e alterando formato do json enviado para o TEF
+1. **Feature**            - Validação se campo relacionado a goonchip está descendo para não quebrar em transações na rede generica
+1. **Feature**            - Correção para alocar dinamicamente o buffer de dados criprografados e não truncar informações
+1. **Feature**            - Adicionando criptografia de dados sensiveis para a rede genérica
+1. **Bugfix**             - Implementação da especificação da PicPay na versão 8.22.23.0010 para corrigir erro na gravação de logs em transação de débito com GetNetLac
+1. **Feature**            - Adicionando reporte sequencial cartão nas transações Cadastramento de Senha, Cancelamento, Consulta Parcelas, Consulta Saldo, Credito, Debito, Pagto. Fatura, Pre Autorização, Saque e Voucher da rede generica
+1. **Feature**            - Adicionando reporte do KSN TDES ao TEF nas transações Cadastramento de Senha, Cancelamento, Consulta Parcelas, Consulta Saldo, Credito, Debito, Pagto. Fatura, Pre Autorização, Saque e Voucher da rede generica
+1. **Feature**            - Adicionando reporte do mapa de chaves (Pin abecs e não abecs) nas transações Cadastramento de Senha, Cancelamento, Consulta Parcelas, Consulta Saldo, Credito, Debito, Pagto. Fatura, Pre Autorização, Saque e Voucher da rede generica
+1. **Feature**            - Alteração para habilitar transações CTLS para a PICPAY e demais redes.
+1. **Bugfix**             - Correção para não pedir a remoção do cartão antes de executar a FCX em casos de erro de comunicação utilizando a bandeira AMEX. 
+1. **Bugfix**             - Tratamento de aids exclusivos, para indicar se existe alguma transação usa exclusivamente um AID
+1. **Bugfix**             - Ajuste na função de filtros de AID, para evitar que qualquer AID possam ser filtrado incorretamente
+1. **Bugfix**             - Ajuste nas operações de pontos da Rede Generica
+1. **Bugfix**             - Correção na criptografia de dados (MAC) da adquirente Rede
+1. **Feature**            - Adicionando novos campos na transação de iniciação de QRCode
+1. **Feature**            - Adicionando verificação para exibição da forma de pagamento QRCode Elo
+1. **Bugfix**             - Ajustando callback seleciona opção identificada e implementando callbacks identificadas no DPOSAppConsole
+1. **Feature**            - Adicionando novas callbacks(EntraValorIdentificado, EntraStringIdentificado, EntraNumeroIdentificado, EntraDataIdentificado, EntraDataValidadeIdentificado, SelecionaOpcaoIdentificado, EntraValorSegurancaIdentificado) para perguntas identificadas
+1. **Feature**            - Ajustando fluxo transacional da transação completa JSON com as particularidades da TicketLog
+1. **Feature**            - Criando mecanismo para retornar a informação dos produtos não utilizados na transação para a automação comercial
+1. **Feature**            - Retornando a camada da DPOSDRV os produtos não utilizados no fluxo de frota para das DLL's da Client Padrão, Visa e Rede
+1. **Feature**            - Processamento do Json de resposta do TEF referente a rede FitCard
+1. **Feature**            - Refatorando processo de criptografia da getpin com base nos campos do PayKit e TEF
+1. **Feature**            - Atualização na utilização dados vindos do tef para go on chip no client Cielo
+1. **Feature**            - Coletando informações do tef para adição nos logs referentes as respostas das transações QR
+1. **Feature**            - Adicionando integração QR Punto com frota json
+1. **Bugfix**             - Ajustando parametros das callbacks de frota 
+1. **Bugfix**             - Ajustando comportamento ao tentar transacionar por transação não implementada na rede.
+1. **Feature**            - Exibição do teclado virtual na tela do GrClient
+1. **Feature**            - Implementando método AtivaPDV e adicionando-o no dposconfig
+1. **Feature**            - Adicionando whitelabel do Paykit para a Equals
+1. **Feature**            - Ajustando versionamento e o adicionando para DPOSConfig e GRClient
+1. **Feature**            - Alterações necessárias para atender novo pacote do Paykit TEF Whitelabel
+1. **Feature**            - Suporte a placa Raspberry Pi 3B
+1. **Feature**            - Suporte a placa Mini2440
+
 ##  Versão: 8.22.23.0034
     Descrição: Correção do método LeIdentificacaoPinPad
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64 e Ubuntu 20.04 x32

@@ -1,5 +1,17 @@
 # RELEASE NOTES:
 
+
+##  Versão: 8.22.24.0021
+    Descrição: Ajustes para que o paykit passe a utilizar arquivo de manifesto para runtime microsoft e pequenas correções.
+    Plataforma: Windows x32
+    Data: 22/07/2026
+
+1. **Hotfix**               - Alteração do metodo ConfiguraFuncionalidades para tratar input em modo JSON (Paykit retro-compativel com input posicional).
+1. **Hotfix**               - Correção no PaykitConfig para ajustes no método de implantação automatica
+1. **Feature**              - Melhorias no atualizador de versão remoto do Paykit para aumentar a efetividade da atualização remota
+1. **Feature**              - Correções na aplicação de coleta de logs, para que colete todos os logs adequadamente.
+1. **Feature**              - Inclusão de manifesto, para que o Paykit utilize sempre a mesma versão de runtime da microsoft
+
 ##  Versão: 8.22.24.0020
     Descrição: Melhoria performance transação QRCode, botoes para copia e cola QRCode e Hotfix.
     Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64, Ubuntu 20.04 x32, CentOS 7.5 x32, Oracle Linux 9 x32 e Rocky Linux 8.9 x32

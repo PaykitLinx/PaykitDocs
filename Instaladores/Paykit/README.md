@@ -3,7 +3,7 @@
 
 ##  Versão: 8.22.24.0021
     Descrição: Ajustes para que o paykit passe a utilizar arquivo de manifesto para runtime microsoft e pequenas correções.
-    Plataforma: Windows x32
+    Plataforma: Windows x32, Ubuntu 22.04 x64, Ubuntu 20.04 x64, Ubuntu 20.04 x32, CentOS 7.5 x32, Oracle Linux 9 x32 e Rocky Linux 8.9 x32
     Data: 22/07/2026
 
 1. **Hotfix**               - Alteração do metodo ConfiguraFuncionalidades para tratar input em modo JSON (Paykit retro-compativel com input posicional).
